@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Confira cafés especiais, doces e comidas da Grão & Prosa."><title>Cardápio: Grão & Prosa</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=2"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/redesign.css"><script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="concept">
+      PROJETO CONCEITUAL. SITE DEMONSTRATIVO
+    </div>
+    <header class="header">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path class="cup" d="M17 26h27l-2.5 18a7 7 0 0 1-7 6h-8a7 7 0 0 1-7-6z"/><path class="handle" d="M43 30h4a6 6 0 0 1 0 12h-7"/><path class="steam" d="M25 20c-3-4 3-5 0-9M34 20c-3-4 3-5 0-9"/></svg></span><span class="logo-name">grão <i>&</i> prosa<small>COFFEE, CULTURE, CONNECTION</small></span></a><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"></button>
+      <nav class="nav">
+        <a href="index.html">Início</a><a href="historia.html">Nossa história</a><a class="active" href="cardapio.html">Cardápio</a><a href="espaco.html">Nosso espaço</a><a href="contato.html">Contato</a>
+      </nav>
+      <a class="header-cta" href="contato.html">Bora de café <span class="arrow-icon" aria-hidden="true"></span></a>
+    </header>
+    <main>
+      <section class="page-hero">
+        <span class="eyebrow">PREPARADO NA HORA, COM CARINHO</span>
+        <h1>
+          Escolha seu<br>próximo favorito.
+        </h1>
+        <p>
+          Do espresso rapidinho ao café coado que pede mais cinco minutos. E sempre tem alguma coisa saindo do forno.
+        </p>
+        <span class="hero-mark geometric-mark" aria-hidden="true"></span>
+      </section>
+      <section class="menu-page">
+        <div class="menu-toolbar">
+          <div><span class="eyebrow">CAFÉ, COMIDA & OUTRAS BOAS IDEIAS</span><h2 class="page-title">Pede a prosa.</h2></div>
+          <span class="illustrative">Produtos e preços fictícios, só para demonstração.</span>
+        </div>
+        <div class="catalog-tools">
+          <label class="search-box"><span class="search-icon" aria-hidden="true"></span><input id="product-search" type="search" placeholder="Procure pelo nome..." aria-label="Buscar produtos no cardápio"><kbd>BUSCAR</kbd></label>
+          <button class="clear-filters" id="clear-filters" type="button">Limpar filtros</button>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar cardápio por categoria">
+          <button aria-pressed="true" data-filter="todos">Tudo</button><button aria-pressed="false" data-filter="cafes">Cafés</button><button aria-pressed="false" data-filter="especiais">Métodos</button><button aria-pressed="false" data-filter="doces">Doces</button><button aria-pressed="false" data-filter="salgados">Salgados</button>
+        </div>
+        <p class="results-note" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state" id="empty-state" hidden><span class="empty-cup" aria-hidden="true"></span><h3>Esse café ainda não passou por aqui.</h3><p>Tente outro nome ou limpe os filtros pra ver o cardápio todo.</p><button type="button" class="button" id="empty-clear">Ver tudo <span class="arrow-icon" aria-hidden="true"></span></button></div>
+        <p class="illustrative menu-disclaimer">Os produtos e preços são fictícios e servem só como referência. Este site não recebe pedidos.</p>
+      </section>
+      <div class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-panel"><button class="modal-close" type="button" aria-label="Fechar detalhes"></button><img class="modal-image" alt=""><div class="modal-copy"><span class="eyebrow modal-category"></span><h2 id="modal-title"></h2><p class="modal-description"></p><strong class="modal-price"></strong><span class="illustrative">Preço ilustrativo</span></div></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <a class="logo logo-footer" href="index.html"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path class="cup" d="M17 26h27l-2.5 18a7 7 0 0 1-7 6h-8a7 7 0 0 1-7-6z"/><path class="handle" d="M43 30h4a6 6 0 0 1 0 12h-7"/><path class="steam" d="M25 20c-3-4 3-5 0-9M34 20c-3-4 3-5 0-9"/></svg></span><span class="logo-name">grão <i>&</i> prosa</span></a>
+        <p>
+          Café bom. Prosa melhor.<br><small>COFFEE, CULTURE, CONNECTION</small>
+        </p>
+        <div class="footer-links">
+          <a href="historia.html">A casa</a><a href="cardapio.html">O cardápio</a><a href="espaco.html">O espaço</a><a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram <span class="arrow-icon" aria-hidden="true"></span></a><a href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">WhatsApp <span class="arrow-icon" aria-hidden="true"></span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>GRÃO & PROSA, 2026. INFORMAÇÕES ILUSTRATIVAS</span><span>Este site é um projeto conceitual desenvolvido pela Traço Norte para demonstração de design e desenvolvimento web. A empresa apresentada é fictícia.</span>
+      </div>
+    </footer>
+  </body>
+</html>
